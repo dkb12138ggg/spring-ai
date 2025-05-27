@@ -22,36 +22,31 @@ public class OpenAiChatClientController {
 
     private final ChatClient openAiChatClient;
 
-    @Autowired
     public OpenAiChatClientController(
             ChatClient.Builder chatClientBuilder,
             ChatMemory chatMemory,
-            @Autowired(required = false) List<ToolCallbackProvider> toolProviders) {
+            ToolCallbackProvider tool) {
 
-        var builder = chatClientBuilder
+        this.openAiChatClient = chatClientBuilder
                 .defaultSystem(
                         """
-                        你是一个客服机器人,按要求回答用户的问题。
-                        当用户询问相关问题时，你可以使用可用的工具来提供更好的服务。
-                        """
+                                你是一个客服机器人,按要求回答用户的问题。
+                                当用户询问相关问题时，你可以使用可用的工具来提供更好的服务。
+                                """
                 )
                 .defaultAdvisors(
                         new PromptChatMemoryAdvisor(chatMemory)
+                )
+                .defaultTools(
+                        tool.getToolCallbacks()
                 )
                 .defaultOptions(
                         OpenAiChatOptions.builder()
                                 .topP(0.7)
                                 .build()
-                );
+                ).build();
 
-        // 添加所有可用的工具
-        if (toolProviders != null && !toolProviders.isEmpty()) {
-            for (ToolCallbackProvider toolProvider : toolProviders) {
-                builder.defaultTools(toolProvider.getToolCallbacks());
-            }
-        }
 
-        this.openAiChatClient = builder.build();
     }
 
     /**

@@ -4,12 +4,13 @@ spring:
   ai:
     mcp:
       server:
-        stdio: true
+#        stdio:
+#          enabled: true
         name: mcp-server
         version: 0.0.1
-        type: SYNC
+#        type: SYNC
 
   main:
-    web-application-type: none
+#    web-application-type: none
     banner-mode: off
 
