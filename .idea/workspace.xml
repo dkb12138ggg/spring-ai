@@ -4,16 +4,38 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bc16430b-07eb-4392-84e3-1d32086c1ba5" name="更改" comment="" />
+    <list default="true" id="bc16430b-07eb-4392-84e3-1d32086c1ba5" name="更改" comment="commit">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-ai-client/src/main/java/ai/spring/springaiclient/controller/OpenAiChatClientController.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-ai-client/src/main/java/ai/spring/springaiclient/controller/OpenAiChatClientController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-ai-client/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-ai-client/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-ai-client/src/main/resources/config/mcp-servers-config.json" beforeDir="false" afterPath="$PROJECT_DIR$/spring-ai-client/src/main/resources/config/mcp-servers-config.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-ai-client/src/main/resources/test.bash" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-ai-server/src/main/java/ai/spring/springaiserver/SpringAiServerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-ai-server/src/main/java/ai/spring/springaiserver/SpringAiServerApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-ai-server/src/main/java/ai/spring/springaiserver/service/GetHellpService.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-ai-server/src/main/java/ai/spring/springaiserver/service/GetHellpService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-ai-server/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-ai-server/src/main/resources/application.yml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/spring-ai-client/src/main/resources" />
+  </component>
   <component name="KubernetesApiPersistence">{}</component>
   <component name="KubernetesApiProvider">{
   &quot;isMigrated&quot;: true
 }</component>
+  <component name="MavenRunner">
+    <option name="skipTests" value="true" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 6
 }</component>
@@ -36,6 +58,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "Spring Boot.SpringAiClientApplication.executor": "Debug",
     "Spring Boot.SpringAiServerApplication.executor": "Debug",
+    "git-widget-placeholder": "main",
     "last_opened_file_path": "/Users/panpan/code/hundun/spring-ai/spring-ai-all/spring-ai-all/spring-ai-client/src/main/resources",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -112,9 +135,22 @@
       <workItem from="1748252330811" duration="17000" />
       <workItem from="1748252529920" duration="1054000" />
     </task>
+    <task id="LOCAL-00001" summary="commit">
+      <option name="closed" value="true" />
+      <created>1748314185571</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1748314185571</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit" />
   </component>
 </project>

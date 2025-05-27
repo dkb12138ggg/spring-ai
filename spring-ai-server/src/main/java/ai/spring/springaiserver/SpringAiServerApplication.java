@@ -1,6 +1,7 @@
 package ai.spring.springaiserver;
 
 import ai.spring.springaiserver.service.GetHellpService;
+import ai.spring.springaiserver.service.TestService;
 import org.springframework.ai.tool.ToolCallbackProvider;
 import org.springframework.ai.tool.method.MethodToolCallbackProvider;
 import org.springframework.boot.SpringApplication;
@@ -15,10 +16,10 @@ public class SpringAiServerApplication {
     }
 
     @Bean
-    public ToolCallbackProvider mathTools(GetHellpService getHellpService) {
+    public ToolCallbackProvider mathTools(GetHellpService getHellpService, TestService testService) {
         return MethodToolCallbackProvider
                 .builder()
-                .toolObjects(getHellpService)
+                .toolObjects(getHellpService,testService)
                 .build();
     }
 

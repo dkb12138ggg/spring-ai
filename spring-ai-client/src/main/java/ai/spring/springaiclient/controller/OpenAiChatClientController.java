@@ -30,8 +30,8 @@ public class OpenAiChatClientController {
         this.openAiChatClient = chatClientBuilder
                 .defaultSystem(
                         """
-                                你是一个客服机器人,按要求回答用户的问题。
-                                当用户询问相关问题时，你可以使用可用的工具来提供更好的服务。
+                                你是一个客服
+                                
                                 """
                 )
                 .defaultAdvisors(

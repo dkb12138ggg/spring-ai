@@ -14,16 +14,16 @@ spring:
         options:
           model: Qwen/Qwen3-30B-A3B
         completions-path: /v1/chat/completions
-
-  mcp:
-    client:
-      enabled: true
-      type: SYNC
-      initialized: true
-      toolcallback:
+    mcp:
+      client:
         enabled: true
-      stdio:
-        servers-configuration: classpath:config/mcp-servers-config.json
+        type: ASYNC
+        initialized: true
+        toolcallback:
+          enabled: true
+        stdio:
+          servers-configuration: classpath:config/mcp-servers-config.json
+
 
 server:
   port: 9000
